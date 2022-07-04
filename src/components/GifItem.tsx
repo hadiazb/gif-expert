@@ -1,4 +1,4 @@
-interface GifItemProps {
+export interface GifItemProps {
 	title: string;
 	url: string;
 }

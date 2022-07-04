@@ -10,12 +10,12 @@ export const GifGrid: React.FC<GifGridProps> = ({ category }) => {
 
 	return (
 		<div>
-			{isLoading && <p>Cargando...</p>}
 			<>
 				{error ? (
 					<p>{error}</p>
 				) : (
 					<>
+						{isLoading && <p>Cargando...</p>}
 						<h3>{category}</h3>
 						<div className='card-grid'>
 							{images.map((image) => (
